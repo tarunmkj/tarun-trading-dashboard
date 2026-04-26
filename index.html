@@ -215,43 +215,20 @@ body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-
 .cl-smc{background:var(--tealdim);color:var(--teal);}
 .cl-risk{background:var(--amberdim);color:var(--amber);}
 
-/* ── AI COACH — INTEGRATED CHAT PANEL ── */
-.ai-panel{display:flex;flex-direction:column;gap:0;}
-.ai-setup-banner{background:linear-gradient(135deg,rgba(232,160,32,.07),rgba(157,112,255,.06));border:1px solid rgba(232,160,32,.2);border-radius:9px;padding:11px 13px;margin-bottom:10px;}
-.ai-setup-title{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:5px;}
-.ai-setup-input{display:flex;gap:6px;margin-top:7px;}
-.ai-setup-input input{flex:1;background:var(--bg4);border:1px solid var(--border2);border-radius:6px;padding:7px 10px;color:var(--text);font-family:'IBM Plex Mono',monospace;font-size:11px;outline:none;}
-.ai-setup-input input:focus{border-color:rgba(232,160,32,.4);}
-.ai-save-btn{padding:7px 14px;border-radius:6px;background:var(--golddim);border:1px solid rgba(232,160,32,.3);color:var(--gold);font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;cursor:pointer;white-space:nowrap;}
-.ai-quick-btns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:8px;}
-.aqb{padding:7px 6px;border-radius:7px;background:var(--bg3);border:1px solid var(--border2);color:var(--text2);font-family:'Outfit',sans-serif;font-size:10px;font-weight:600;cursor:pointer;text-align:center;transition:all .15s;line-height:1.3;}
-.aqb:hover{border-color:rgba(232,160,32,.35);color:var(--gold);background:var(--golddim);}
-.aqb.loading{opacity:.5;pointer-events:none;}
-.ai-analyse-btn{width:100%;padding:10px;border-radius:8px;background:linear-gradient(135deg,rgba(232,160,32,.1),rgba(157,112,255,.08));border:1px solid rgba(232,160,32,.25);color:var(--gold);font-family:'Outfit',sans-serif;font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .2s;margin-bottom:8px;}
-.ai-analyse-btn:hover{background:linear-gradient(135deg,rgba(232,160,32,.18),rgba(157,112,255,.14));}
-.ai-analyse-btn:disabled{opacity:.4;cursor:not-allowed;}
-.ai-chat-box{background:var(--bg3);border:1px solid var(--border2);border-radius:9px;overflow:hidden;display:none;}
-.ai-chat-box.visible{display:flex;flex-direction:column;}
-.ai-chat-hdr{padding:7px 12px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;}
-.ai-chat-hdr-left{font-family:'IBM Plex Mono',monospace;font-size:8px;letter-spacing:1px;color:var(--gold);}
-.ai-chat-clear{font-size:9px;color:var(--text3);cursor:pointer;padding:2px 7px;border-radius:4px;border:1px solid var(--border);background:none;font-family:'IBM Plex Mono',monospace;}
-.ai-chat-clear:hover{color:var(--red);border-color:rgba(255,48,80,.3);}
-.ai-chat-messages{padding:10px 12px;max-height:340px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;}
-.ai-msg{border-radius:8px;padding:9px 11px;font-size:11px;line-height:1.72;}
-.ai-msg.user{background:rgba(232,160,32,.07);border:1px solid rgba(232,160,32,.14);color:var(--text);align-self:flex-end;max-width:85%;}
-.ai-msg.assistant{background:var(--bg4);border:1px solid var(--border2);color:var(--text);align-self:flex-start;max-width:100%;}
-.ai-msg.assistant .ai-msg-label{font-family:'IBM Plex Mono',monospace;font-size:8px;color:var(--gold);letter-spacing:1px;margin-bottom:5px;}
-.ai-msg.thinking{background:var(--bg4);border:1px solid var(--border);padding:10px 12px;display:flex;align-items:center;gap:8px;color:var(--text3);font-size:11px;}
-.ai-spin{width:12px;height:12px;border:2px solid var(--border2);border-top-color:var(--gold);border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0;}
-@keyframes spin{to{transform:rotate(360deg)}}
-.ai-chat-input-row{padding:8px 10px;border-top:1px solid var(--border);display:flex;gap:6px;}
-.ai-chat-input{flex:1;background:var(--bg4);border:1px solid var(--border2);border-radius:6px;padding:7px 10px;color:var(--text);font-family:'Outfit',sans-serif;font-size:11px;outline:none;resize:none;}
-.ai-chat-input:focus{border-color:rgba(232,160,32,.4);}
-.ai-send-btn{padding:7px 13px;border-radius:6px;background:var(--golddim);border:1px solid rgba(232,160,32,.3);color:var(--gold);font-family:'Outfit',sans-serif;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;}
-.ai-send-btn:hover{background:var(--goldbright);}
-.ai-send-btn:disabled{opacity:.4;cursor:not-allowed;}
-.ai-worker-note{font-size:9px;color:var(--text3);line-height:1.6;margin-top:6px;padding:7px 10px;background:var(--bg4);border-radius:6px;border:1px solid var(--border);}
-.ai-btn{width:100%;padding:9px;border-radius:8px;background:linear-gradient(135deg,var(--golddim),var(--purpledim));border:1px solid rgba(232,160,32,.22);color:var(--gold);font-family:'Outfit',sans-serif;font-size:11px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .2s;}
+/* ── AI COACH — FREE CLAUDE.AI VERSION ── */
+.ai-free-panel{padding:4px 0 8px;}
+.ai-free-banner{background:linear-gradient(135deg,rgba(232,160,32,.07),rgba(157,112,255,.06));border:1px solid rgba(232,160,32,.2);border-radius:9px;padding:11px 13px;margin-bottom:10px;}
+.ai-free-title{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-bottom:5px;}
+.ai-free-sub{font-size:10px;color:var(--text2);line-height:1.6;}
+.ai-full-btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:11px;border-radius:9px;background:linear-gradient(135deg,rgba(232,160,32,.1),rgba(157,112,255,.08));border:1px solid rgba(232,160,32,.25);color:var(--gold);font-family:'Outfit',sans-serif;font-size:12px;font-weight:700;text-decoration:none;margin-bottom:10px;transition:all .2s;}
+.ai-full-btn:hover{background:linear-gradient(135deg,rgba(232,160,32,.18),rgba(157,112,255,.15));}
+.ai-quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px;}
+.ai-quick-link{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:10px 6px;border-radius:8px;background:var(--bg3);border:1px solid var(--border2);text-decoration:none;transition:all .15s;cursor:pointer;}
+.ai-quick-link:hover{border-color:rgba(232,160,32,.35);background:var(--golddim);}
+.aql-icon{font-size:16px;line-height:1;}
+.aql-text{font-size:9px;font-weight:600;color:var(--text2);text-align:center;line-height:1.4;font-family:'Outfit',sans-serif;}
+.ai-quick-link:hover .aql-text{color:var(--gold);}
+.ai-free-note{font-size:9px;color:var(--text3);line-height:1.6;padding:7px 10px;background:var(--bg4);border-radius:6px;border:1px solid var(--border);}
 .ai-response{display:none;}
 .ai-response.visible{display:block;}
 
@@ -952,19 +929,94 @@ function toggleCard(id){
 function expandAll(){INST.forEach(i=>openCards.add(i.id));renderGrid();}
 function collapseAll(){openCards.clear();renderGrid();}
 
-// ── AI COACH — FULLY INTEGRATED CHAT PANEL ───────────────────────────
-
-var aiConversations = {}; // { instId: [{role, content}] }
-
-function getWorkerURL() { return localStorage.getItem('tm_worker_url') || ''; }
-function saveWorkerURL(url) { localStorage.setItem('tm_worker_url', url.trim()); }
-function getAnthropicKey() { return localStorage.getItem('tm_ant_key') || ''; }
-function saveAnthropicKey(k) { localStorage.setItem('tm_ant_key', k.trim()); }
+// ── AI COACH — FREE CLAUDE.AI DEEP LINKS ─────────────────────────────
 
 function buildAITab(inst) {
-  var hasWorker = !!getWorkerURL();
-  var hasKey    = !!getAnthropicKey();
-  var isReady   = hasWorker || hasKey;
+  var livePrice = priceCache[inst.id] ? formatPrice(inst.id, priceCache[inst.id].price) : inst.price;
+  var livePct   = priceCache[inst.id] && priceCache[inst.id].pct !== null
+    ? (priceCache[inst.id].pct >= 0 ? '+' : '') + priceCache[inst.id].pct.toFixed(2) + '%'
+    : inst.chg;
+
+  var btns = [
+    {icon:'📍', line1:'Best entry', line2:'trigger now', type:'entry'},
+    {icon:'❌', line1:'What', line2:'invalidates this', type:'invalidation'},
+    {icon:'⏱', line1:'Best kill zone', line2:'session tonight', type:'session'},
+    {icon:'💰', line1:'Position size', line2:'$1,300 AUD', type:'sizing'},
+    {icon:'📊', line1:'DXY impact', line2:'on this trade', type:'dxy'},
+    {icon:'🔗', line1:'Full confluence', line2:'breakdown', type:'confluence'},
+  ];
+
+  var btnHTML = btns.map(function(b) {
+    var prompt = buildPrompt(inst, b.type, livePrice, livePct);
+    var url = 'https://claude.ai/new?q=' + encodeURIComponent(prompt);
+    return '<a href="'+url+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="ai-quick-link">'+
+      '<span class="aql-icon">'+b.icon+'</span>'+
+      '<span class="aql-text">'+b.line1+'<br>'+b.line2+'</span>'+
+    '</a>';
+  }).join('');
+
+  var fullPrompt = buildPrompt(inst, 'full', livePrice, livePct);
+  var fullURL = 'https://claude.ai/new?q=' + encodeURIComponent(fullPrompt);
+
+  return '<div class="ai-free-panel" onclick="event.stopPropagation()">'+
+    '<div class="ai-free-banner">'+
+      '<div class="ai-free-title">🤖 AI COACH · '+inst.name+'</div>'+
+      '<div class="ai-free-sub">Opens Claude.ai with your full AMD+SMC context pre-loaded. Uses your existing Claude subscription — free.</div>'+
+    '</div>'+
+    '<a href="'+fullURL+'" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="ai-full-btn">'+
+      '🤖 &nbsp; Full AMD+SMC Analysis — '+inst.name+' →'+
+    '</a>'+
+    '<div class="ai-quick-grid">'+btnHTML+'</div>'+
+    '<div class="ai-free-note">Each button opens Claude.ai in a new tab with all instrument data, entry levels, confluence scores and market context pre-filled. No API key needed.</div>'+
+  '</div>';
+}
+
+function buildPrompt(inst, type, livePrice, livePct) {
+  var confLines = inst.confluence.filter(function(c){return c.name;}).map(function(c){
+    return c.name+': '+c.val+'/10 — '+c.note;
+  }).join('\n');
+
+  var context = 'INSTRUMENT: '+inst.name+
+    '\nLIVE PRICE: '+livePrice+' ('+livePct+')'+
+    '\nVERDICT: '+inst.verdict.toUpperCase()+' | SCORE: '+inst.score+'/10 | PRIORITY: P'+inst.priority+
+    '\nENTRY: '+inst.entry+' | SL: '+inst.sl+' | TP1: '+inst.tp1+' | TP2: '+inst.tp2+' | RR: '+(inst.rr>0?'1:'+inst.rr.toFixed(1):'N/A')+
+    '\nAMD PHASE: '+inst.amd+' | SESSION: '+inst.session+
+    '\n\nCONFLUENCE:\n'+confLines+
+    '\n\nMARKET CONTEXT: DXY 98.70 (+0.26%). Iran/Hormuz escalation — WTI +4%, Brent $105+. BoJ April 28. FOMC April 29. 75% S&P earnings beat. Friday rules: 1% max risk, close before 2AM AEST.'+
+    '\n\nMY FRAMEWORK: AMD cycle — A=Asian observe, M=London sweep hunt, D=NY Kill Zone entry (11:30PM–1:30AM AEST). Entry requires CHoCH + OB confluence on 15M. Minimum 1:3 RR. DXY above 98.60 confirms USD longs. Account: $1,300 AUD on Plus500 CFDs.\n\n';
+
+  var questions = {
+    'full': context+'Give me a complete AMD+SMC analysis: (1) current AMD phase, (2) buy/sell bias with SMC reasons, (3) exact 15M entry trigger, (4) best kill zone session tonight AEST, (5) key invalidation, (6) position sizing for $1,300 AUD at 1% risk, (7) one sentence verdict.',
+    'entry': context+'What is the EXACT entry trigger I need to see on the 15M chart for '+inst.name+' before entering? Walk me through the precise candle sequence and confirmation steps I need.',
+    'invalidation': context+'What is the single most important condition that invalidates the '+inst.verdict.toUpperCase()+' setup on '+inst.name+'? What price level, candle pattern or event makes me walk away completely?',
+    'session': context+'Which kill zone session tonight gives the best entry for '+inst.name+'? Compare London KZ (6PM–9PM AEST) vs NY Kill Zone (11:30PM–1:30AM AEST) for this specific setup.',
+    'sizing': context+'Calculate exact position sizing for '+inst.name+' for my $1,300 AUD Plus500 account. Entry: '+inst.entry+' | SL: '+inst.sl+' | TP1: '+inst.tp1+' | TP2: '+inst.tp2+'. Use 1% Friday risk rule. Show full calculation.',
+    'dxy': context+'DXY is at 98.70. Explain exactly how this affects the '+inst.name+' trade. At what DXY level does the thesis flip and I should close or reverse?',
+    'confluence': context+'Score each confluence factor for '+inst.name+' out of 10: HTF structure, Order Block quality, FVG, liquidity sweep, DXY alignment, session timing, news/fundamental. Justify each score and give a final verdict.',
+  };
+  return questions[type] || questions['full'];
+}
+
+// Stub functions to prevent errors from any remaining references
+function buildAITab_old(){} 
+function callAI(){return Promise.resolve('Use the Claude.ai buttons above.');}
+function askFull(id){ var inst=INST.find(function(i){return i.id===id;}); if(inst){var p=buildPrompt(inst,'full',inst.price,inst.chg); window.open('https://claude.ai/new?q='+encodeURIComponent(p),'_blank');}}
+function askQuick(id,type){ var inst=INST.find(function(i){return i.id===id;}); if(inst){var p=buildPrompt(inst,type,inst.price,inst.chg); window.open('https://claude.ai/new?q='+encodeURIComponent(p),'_blank');}}
+function sendChat(){}
+function clearChat(){}
+function saveWorker(){}
+function saveAntKey(){}
+function clearAISetup(){}
+function refreshAITabs(){}
+function bindChatEnter(){}
+function buildSystemPrompt(inst){return '';}
+function setAIBusy(){}
+function showChatBox(){}
+function showThinking(){}
+function hideThinking(){}
+function addMessage(){}
+function renderMessages(){}
+function renderMessagesFromArray(){}
 
   var setupSection = !isReady ? `
     <div class="ai-setup-banner">
